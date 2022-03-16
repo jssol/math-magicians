@@ -26,7 +26,7 @@ $fs-normal: 1.35em;
 .Pad {
   width: 100%;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "reset inverter modulo divide"
     "seven eight nine times"
     "four five six minus"
@@ -48,11 +48,11 @@ $fs-normal: 1.35em;
 }
 
 .Gray {
-  background-color: $white; 
+  background-color: $white;
 }
 
 .Orange {
-  background-color: $orange; 
+  background-color: $orange;
 }
 
 .Reset {
