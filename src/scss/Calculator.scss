@@ -48,8 +48,8 @@ $fs-normal: 1.35em;
 }
 
 .Button:active {
-  filter: brightness(0.95);
-  box-shadow: none;
+  filter: brightness(0.975);
+  box-shadow: 0.5px 0.5px 0 0 $gray;
 }
 
 .Gray {
