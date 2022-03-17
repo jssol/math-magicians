@@ -47,6 +47,11 @@ $fs-normal: 1.35em;
   box-shadow: 1px 1px 0.05px 0 $gray;
 }
 
+.Button:active {
+  filter: brightness(0.95);
+  box-shadow: none;
+}
+
 .Gray {
   background-color: $white;
 }
