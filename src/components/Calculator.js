@@ -117,9 +117,17 @@ class Calculator extends React.Component {
 
   render() {
     const { total, next } = this.state;
+    let result;
+    if (total === null && next !== null) {
+      result = next;
+    } else if (total !== null && next === null) {
+      result = total;
+    } else {
+      result = next;
+    }
     return (
       <div className="Calculator">
-        <section className="Result">{total === null ? next : total}</section>
+        <section className="Result">{result}</section>
         <section className="Pad">
           {buttons.map((button) => (<button key={button.id} onClick={this.handleClick} type="button" className={`Button ${button.id} ${button.color}`}>{button.symbol}</button>))}
         </section>
