@@ -60,9 +60,9 @@ export default function calculate(obj, buttonName) {
       if (obj.total.includes('.')) {
         return {};
       }
-      return { total: `${obj.total}.` };
+      return { next: `${obj.total}.` };
     }
-    return { total: '0.' };
+    return { next: '0.' };
   }
 
   if (buttonName === '=') {
@@ -91,9 +91,9 @@ export default function calculate(obj, buttonName) {
 
   // When the user presses an operation button without having entered
   // a number first, do nothing.
-  if (!obj.next && !obj.total) {
-    return {};
-  }
+  // if (!obj.next && !obj.total) {
+  //   return {};
+  // }
 
   // User pressed an operation after pressing '='
   if (!obj.next && obj.total && !obj.operation) {
