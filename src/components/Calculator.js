@@ -104,7 +104,8 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: 0,
+      total: null,
+      next: null,
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -115,10 +116,10 @@ class Calculator extends React.Component {
   }
 
   render() {
-    const { total } = this.state;
+    const { total, next } = this.state;
     return (
       <div className="Calculator">
-        <section className="Result">{total}</section>
+        <section className="Result">{total === null ? next : total}</section>
         <section className="Pad">
           {buttons.map((button) => (<button key={button.id} onClick={this.handleClick} type="button" className={`Button ${button.id} ${button.color}`}>{button.symbol}</button>))}
         </section>
