@@ -1,0 +1,144 @@
+$white: #e0e0e0;
+$gray: #858694;
+$orange: #f5913e;
+$fs-big: 1.75em;
+$fs-normal: 1.35em;
+
+.Calculator {
+  width: 90%;
+  margin: 2em auto;
+  background-color: $white;
+}
+
+.Result {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 3em;
+  background-color: $gray;
+  border-bottom: 2px #fff solid;
+  color: #fff;
+  padding: 0.5em;
+  font-size: $fs-big;
+}
+
+.Pad {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "reset inverter modulo divide"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
+    "zero zero point equal";
+  background-color: #fff;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.Button {
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: $fs-normal;
+  box-shadow: 1px 1px 0.05px 0 $gray;
+}
+
+.Gray {
+  background-color: $white;
+}
+
+.Orange {
+  background-color: $orange;
+}
+
+.Reset {
+  grid-area: reset;
+}
+
+.Dot {
+  grid-area: point;
+}
+
+.Equal {
+  grid-area: equal;
+}
+
+.Inverter {
+  grid-area: inverter;
+}
+
+.Times {
+  grid-area: times;
+}
+
+.Divide {
+  grid-area: divide;
+}
+
+.Modulo {
+  grid-area: modulo;
+}
+
+.Plus {
+  grid-area: plus;
+}
+
+.Minus {
+  grid-area: minus;
+}
+
+.Zero {
+  grid-area: zero;
+}
+
+.One {
+  grid-area: one;
+}
+
+.Two {
+  grid-area: two;
+}
+
+.Three {
+  grid-area: three;
+}
+
+.Four {
+  grid-area: four;
+}
+
+.Five {
+  grid-area: five;
+}
+
+.Six {
+  grid-area: six;
+}
+
+.Seven {
+  grid-area: seven;
+}
+
+.Eight {
+  grid-area: eight;
+}
+
+.Nine {
+  grid-area: nine;
+}
+
+@media only screen and (min-width: 992px) {
+  .Calculator {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .Calculator {
+    width: 35%;
+  }
+}
