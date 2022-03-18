@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './scss/App.scss';
 import Calculator from './components/CalculatorHooks';
 
-function App() {
+const App = () => {
   const [state] = useState({ theme: 'light' });
   const { theme } = state;
   return (
@@ -10,6 +10,6 @@ function App() {
       <Calculator />
     </div>
   );
-}
+};
 
 export default App;

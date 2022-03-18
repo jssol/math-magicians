@@ -100,7 +100,7 @@ const buttons = [
   },
 ];
 
-function Calculator() {
+const Calculator = () => {
   const [state, setState] = useState({ total: null, next: null });
   const { total, next } = state;
 
@@ -126,6 +126,6 @@ function Calculator() {
       </section>
     </div>
   );
-}
+};
 
 export default Calculator;
