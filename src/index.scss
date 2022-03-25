@@ -1,10 +1,10 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* stylelint-disable */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* stylelint-enable */
 
 body {
   font-family:
@@ -21,9 +21,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-button {
-  background: transparent;
-  border: none;
 }
