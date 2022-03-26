@@ -25,6 +25,7 @@ const AppHooks = () => {
       <Header handleThemeProps={handleTheme} theme={theme} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/math-magicians" element={<Home />} />
         <Route path="/calculator" element={<CalculatorHooks />} />
         <Route path="/quote" element={<Quote />} />
       </Routes>
