@@ -1,4 +1,4 @@
-@use 'Design';
+@import 'Design';
 
 .CalculatorSection {
   width: 90%;
@@ -9,13 +9,13 @@
 }
 
 .CalculatorTitle {
-  font-size: Design.$fs-normal;
+  font-size: $fs-normal;
   margin-bottom: 1em;
 }
 
 .Calculator {
   width: 100%;
-  background-color: Design.$white;
+  background-color: $white;
 }
 
 .Result {
@@ -24,11 +24,11 @@
   justify-content: end;
   width: 100%;
   height: 3em;
-  background-color: Design.$gray;
+  background-color: $gray;
   border-bottom: 2px #fff solid;
   color: #fff;
   padding: 0.5em;
-  font-size: Design.$fs-big;
+  font-size: $fs-big;
 }
 
 .Pad {
@@ -51,21 +51,21 @@
   align-items: center;
   justify-content: center;
   padding: 0.5em;
-  font-size: Design.$fs-normal;
-  box-shadow: 1px 1px 0.05px 0 Design.$gray;
+  font-size: $fs-normal;
+  box-shadow: 1px 1px 0.05px 0 $gray;
 }
 
 .Button:active {
   filter: brightness(0.975);
-  box-shadow: 0.5px 0.5px 0 0 Design.$gray;
+  box-shadow: 0.5px 0.5px 0 0 $gray;
 }
 
 .Gray {
-  background-color: Design.$white;
+  background-color: $white;
 }
 
 .Orange {
-  background-color: Design.$orange;
+  background-color: $orange;
 }
 
 .Reset {
@@ -151,7 +151,7 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  
+
   .Calculator {
     width: 60%;
   }

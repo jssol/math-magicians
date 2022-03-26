@@ -1,11 +1,11 @@
-@use 'Design';
+@import 'Design';
 
 .HomeSection {
   width: 80%;
   margin: 4em auto;
-  
+
   .HomeTitle {
-    font-size: Design.$fs-big;
+    font-size: $fs-big;
   }
 
   & > .HomeText {

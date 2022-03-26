@@ -1,4 +1,4 @@
-@use 'Design';
+@import 'Design';
 
 .Header {
   width: 90%;
@@ -8,23 +8,22 @@
   padding: 1em;
 
   .HeaderTitle {
-    font-size: Design.$fs-big;
+    font-size: $fs-big;
   }
 
   .Nav {
     display: flex;
-    align-items: center;
+    align-items: stretch;
 
     .NavLink.active {
-      color: Design.$orange;
+      color: $orange;
     }
 
     .NavElement {
-      padding: 0.25em;
+      padding: 0.5em;
 
       + .NavElement {
-        border-left: 1px solid inherit;
-        margin-left: 0.5em;
+        border-left: 2px solid #000;
       }
     }
   }
