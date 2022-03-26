@@ -1,0 +1,15 @@
+@import 'Design';
+
+.HomeSection {
+  width: 80%;
+  margin: 4em auto;
+
+  .HomeTitle {
+    font-size: $fs-big;
+  }
+
+  & > .HomeText {
+    margin-top: 1em;
+    width: 60%;
+  }
+}

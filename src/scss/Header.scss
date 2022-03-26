@@ -1,0 +1,30 @@
+@import 'Design';
+
+.Header {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+
+  .HeaderTitle {
+    font-size: $fs-big;
+  }
+
+  .Nav {
+    display: flex;
+    align-items: stretch;
+
+    .NavLink.active {
+      color: $orange;
+    }
+
+    .NavElement {
+      padding: 0.5em;
+
+      + .NavElement {
+        border-left: 2px solid #000;
+      }
+    }
+  }
+}

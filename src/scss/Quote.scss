@@ -1,0 +1,28 @@
+.QuoteSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  width: 60%;
+  margin: auto;
+
+  .Quote {
+    align-self: flex-start;
+    line-height: 1.4;
+    width: 90%;
+  }
+
+  .Author {
+    align-self: flex-end;
+    margin-top: 1em;
+    font-style: italic;
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .QuoteSection {
+    height: 50%;
+    width: 25%;
+  }
+}

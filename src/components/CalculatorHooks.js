@@ -119,12 +119,15 @@ const Calculator = () => {
   };
 
   return (
-    <div className="Calculator">
-      <section className="Result">{result}</section>
-      <section className="Pad">
-        {buttons.map((button) => (<button key={button.id} onClick={handleClick} type="button" className={`Button ${button.id} ${button.color}`}>{button.symbol}</button>))}
-      </section>
-    </div>
+    <section className="CalculatorSection">
+      <h2 className="CalculatorTitle">Let&apos;s do some math!</h2>
+      <div className="Calculator">
+        <section className="Result">{result}</section>
+        <section className="Pad">
+          {buttons.map((button) => (<button key={button.id} onClick={handleClick} type="button" className={`Button ${button.id} ${button.color}`}>{button.symbol}</button>))}
+        </section>
+      </div>
+    </section>
   );
 };
 
