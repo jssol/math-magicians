@@ -43,7 +43,7 @@ const Quote = () => {
     const quoteInterval = setInterval(() => {
       const quote = generateQuote(quotes);
       setState(quote);
-    }, 20000);
+    }, 15000);
 
     return () => clearInterval(quoteInterval);
   }, []);
