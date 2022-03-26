@@ -1,23 +1,21 @@
+import '../scss/Home.scss';
+
 const Home = () => (
-  <section>
-    <h2>Welcome to our page!</h2>
-    <p>
+  <section className="HomeSection">
+    <h2 className="HomeTitle">Welcome to our page!</h2>
+    <p className="HomeText">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       Perspiciatis quia, cumque natus reiciendis praesentium atque
       quaerat repudiandae porro incidunt illo, necessitatibus eos
       ipsum enim repellat id possimus vero quod consectetur animi ad
-      blanditiis ipsam quis ducimus itaque. Mollitia nesciunt
-      consequuntur inventore velit doloremque dolores eveniet, illo
-      nisi quasi molestiae! In.
+      blanditiis ipsam quis ducimus itaque.
     </p>
-    <p>
+    <p className="HomeText">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       Perspiciatis quia, cumque natus reiciendis praesentium atque
       quaerat repudiandae porro incidunt illo, necessitatibus eos
       ipsum enim repellat id possimus vero quod consectetur animi ad
-      blanditiis ipsam quis ducimus itaque. Mollitia nesciunt
-      consequuntur inventore velit doloremque dolores eveniet, illo
-      nisi quasi molestiae! In.
+      blanditiis ipsam quis ducimus itaque.
     </p>
   </section>
 );
